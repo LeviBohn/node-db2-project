@@ -7,7 +7,7 @@
     "test": "cross-env NODE_ENV=testing jest --verbose --runInBand",
     "migrate": "knex migrate: latest",
     "seed": "knex seed:run",
-    "makemigration": " knex migrate make",
+    "makemigration": " knex migrate make"
   },
   "devDependencies": {
     "@types/jest": "^27.5.0",
