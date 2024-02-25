@@ -18,7 +18,9 @@ const getByVin = (vin) => {
 const create = (car) => {
   // DO YOUR MAGIC
   return db('cars').insert(car)
-  .then(([id]) => getByVin(id))
+    .then(([id]) => {
+      return getById(id)
+    })
 }
 
 module.exports = {
