@@ -9,9 +9,9 @@ exports.up = function (knex) {
 
     tbl.string('make', 128).notNullable()
 
-    tbl.string('model', 128).notNullable()
+    tbl.string('model', 256).notNullable()
 
-    tbl.numeric('mileage').notNullable()
+    tbl.integer('mileage').notNullable()
 
     tbl.string('title', 128).defaultTo('gotta figure this out!')
 
